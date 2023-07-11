@@ -1,6 +1,15 @@
 const express = require("express")
-const app = express()
+const dotenv = require("dotenv")
+const mongoose = require("mongoose")
 
-app.listen(4000, (req,res) => {
-    console.log("Welcome Nodejs Sample");
+const app = express()
+dotenv.config()
+mongoose.connect(process.env.DB_URL)
+    .then(console.log("oky"))
+    .catch(err => {
+        console.log("error")
+    })
+
+app.listen(process.env.PORT, (req, res) => {
+    console.log("Welcome Nodejs Samplee");
 })
