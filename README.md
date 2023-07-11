@@ -6,3 +6,4 @@ step3 nodemon and mongoose stalled
 step4 welcome file main.js and nodemon step
 step5 expressjs initilization listner
 step6 dotenv create and mongoose connection
+step7 create user model using mongo schema
